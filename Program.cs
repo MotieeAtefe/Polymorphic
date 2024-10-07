@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ElectricCar electricCar = new ElectricCar();
+
+            Console.Write("Please Enter charge of car: ");
+            double kilometer = double.Parse(Console.ReadLine());
+
+
+            electricCar.MeasurementCapacityBatry(kilometer);
+
+
+
+
         }
     }
 }

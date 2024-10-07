@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Polymorphic
 {
-    internal class GasolineCar
+    internal class GasolineCar:Car
     {
+        public void FuelCapacity()
+        {
+            Start();
+        }
     }
 }

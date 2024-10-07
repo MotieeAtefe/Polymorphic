@@ -10,22 +10,21 @@ namespace Polymorphic
     {
         protected DateTime t;
         protected double kwh;
-        public void MeasurementCapacityBatry(string t, double kwh)
+        public  void MeasurementCapacityBatry(double kwh)
         {
-            this.t = DateTime.Parse(t);
+            
             this.kwh = kwh;
-            if(kwh < 2000) 
+            if(kwh < 2) 
             {
                 Console.WriteLine("Please charge Car");
             }
-            else if(kwh >2000)
-            {
-                Console.WriteLine("Running Car..."+" Have a Good Times");
+            else if(kwh >2)
+            {  
+               
                 Start();
             }
             else if(kwh < 0)
             {
-                Console.WriteLine("Stoping Car, \n Beacuse not have a charge!, \n Please charge Car");
                 Stop();
             }
         }

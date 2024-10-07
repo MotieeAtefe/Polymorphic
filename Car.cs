@@ -11,20 +11,20 @@ namespace Polymorphic
         protected String Model;
         protected String Name;
         protected String color;
-        public void Start()
+        public virtual void Start()
         {
-            Console.WriteLine("The Car is Running... ");
+            Console.WriteLine("Running Car..."+" Have a Good Times");
         }
-        public void Stop()
+        public virtual void Stop()
         {
-            Console.WriteLine("The Car is stoping...");
+            Console.WriteLine("Stoping Car, \n Beacuse not have a charge!, \n Please charge Car");
 
         }
-        public void SetColor(String Color)
+        public virtual void SetColor(String Color)
         {
             this.color = Color;
         }
-        public String GetColor()
+        public virtual String GetColor()
         {
             return this.color;
         }
