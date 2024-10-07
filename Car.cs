@@ -20,6 +20,15 @@ namespace Polymorphic
             Console.WriteLine("The Car is stoping...");
 
         }
+        public void SetColor(String Color)
+        {
+            this.color = Color;
+        }
+        public String GetColor()
+        {
+            return this.color;
+        }
+
 
 
     }
