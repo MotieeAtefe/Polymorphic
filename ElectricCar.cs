@@ -18,9 +18,15 @@ namespace Polymorphic
             {
                 Console.WriteLine("Please charge Car");
             }
-            else
+            else if(kwh >2000)
             {
+                Console.WriteLine("Running Car..."+" Have a Good Times");
                 Start();
+            }
+            else if(kwh < 0)
+            {
+                Console.WriteLine("Stoping Car, \n Beacuse not have a charge!, \n Please charge Car");
+                Stop();
             }
         }
     }
